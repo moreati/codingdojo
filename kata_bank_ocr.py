@@ -1,3 +1,5 @@
+import sys
+
 digits = [
     '   \n'
     '  |\n'
@@ -35,3 +37,9 @@ digits = [
     '|_|\n'
     ' _|\n'
     ]
+
+digit = ''
+for line in sys.stdin:
+    digit = digit + line
+
+print repr(digit)
